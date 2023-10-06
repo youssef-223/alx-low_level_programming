@@ -1,49 +1,39 @@
 #include <stdio.h>
 
 /**
- * main  - entry point
+ * main - Entry point
  *
- * Description: program entry point
+ * Description: Prints three-digit combinations without repetition
+ *              separated by commas and spaces.
  *
- * Return: alwasy success (0)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-        int digit1 = 0;
-		int digit2, digit3;
+	int digit1, digit2, digit3;
+	int comma_flag = 0;
 
-                while (digit1 <= 9)
-                {
-                        digit2 = 0;
+	for (digit1 = 0; digit1 <= 9; digit1++)
+	{
+		for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
+		{
+			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
+			{
+				putchar(digit1 + '0');
+				putchar(digit2 + '0');
+				putchar(digit3 + '0');
 
-                        while (digit2 <= 9)
-                        {
-								digit3 = 0;
-								
-								while (digit3 <= 9)
-                                
-								if (digit1 != digit2 &&
-									digit1 < digit2 &&
-									digit2 != digit3 &&
-									digit2 < digit3)
-									
-                                {
-                                        putchar(digit1 + 48);
-                                        putchar(digit2 + 48);
-                                        putchar(digit3 + 48);
-
-                                        if (digit1 + digit2 +digit3 != 24)
-                                        {
-                                                putchar(',');
-                                                putchar(' ');
-                                        }
-                                }
-							digit2++;
-					}
-                        digit1++;
-                }
-					digit3++;
+				if (!(digit1 == 7 && digit2 == 8 && digit3 == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-            putchar('\n');
-        return (0);
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
+
