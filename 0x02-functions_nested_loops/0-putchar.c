@@ -1,15 +1,15 @@
+#include <unistd.h>
+#include "main.h"
+
 /**
- * main  - entry point
+ * _putchar - writes character to standart output
+ *@c: The character to be written
  *
- * Description: program entry point
- *
- * Return: alwasy success (0)
+ * Return: on success (0)
+ *	on failure (1)
  */
 
-#include <stdio.h>
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar");
-	return (0);
+	return (write(1, &c, 1));
 }
-
