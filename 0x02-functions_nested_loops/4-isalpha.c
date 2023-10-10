@@ -3,16 +3,17 @@
 #include <stdio.h>
 
 /**
- * _islower - _islower
+ * _isalpha - _isalpha
  * @c : paramter
  *
- * Return: success (0)
- *		error (1)
+ * Return: (1) if error
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (c >= 97 && c <= 122)
+		return (1);
+	if (c >= 65 && c <= 90)
 		return (1);
 	return (0);
 }
