@@ -6,6 +6,7 @@
  * Return: alwasy success (0)
  */
 
+#include "main.h"
 #include <stdio.h>
 int main(void)
 {
