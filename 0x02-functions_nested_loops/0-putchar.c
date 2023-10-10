@@ -1,15 +1,20 @@
-#include <unistd.h>
-#include "main.h"
-
 /**
- * _putchar - writes character to standart output
- *@c: The character to be written
+ * main  - entry point
  *
- * Return: on success (0)
- *	on failure (1)
+ * Description: program entry point
+ *
+ * Return: alwasy success (0)
  */
 
-int _putchar(char c)
+#include <stdio.h>
+int main(void)
 {
-	return (write(1, &c, 1));
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
+
+	return (0);
 }
