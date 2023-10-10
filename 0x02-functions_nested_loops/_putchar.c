@@ -1,6 +1,8 @@
 #include <unistd.h>
 #include "main.h"
 
+#includ <stdio.h>
+
 /**
  * _putchar - writes character to standart output
  *@c: The character to be written
