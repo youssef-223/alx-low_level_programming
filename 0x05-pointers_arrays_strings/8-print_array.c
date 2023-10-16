@@ -1,4 +1,5 @@
-#include "main.h"
+#include "main.h"i
+#include <stdio.h>
 
 /**
  * print_array - alx project
