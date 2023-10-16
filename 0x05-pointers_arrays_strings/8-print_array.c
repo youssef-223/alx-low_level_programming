@@ -2,21 +2,32 @@
 #include <stdio.h>
 
 /**
- * print_array - alx project
- *
- * @a: int param1
- * @n: int param2
- *
- * Return: void
- *
+ * print_array - Prints the elements of an array
+ * @a: The array to be printed
+ * @n: The number of elements in the array
  */
-
 void print_array(int *a, int n)
 {
-	int i;
-
-	for (i = 0; i < n; i++)
+	if (n <= 0)
 	{
-		printf("%d, ", a[i]);
+		printf("\n");
+	}
+	else
+	{
+		int i;
+
+		for (i = 0; i < n; i++)
+		{
+			if (i == n - 1)
+			{
+				printf("%d", a[i]);
+			}
+			else
+			{
+				printf("%d, ", a[i]);
+			}
+		}
+
+		printf("\n");  /* Print a newline after the array. */
 	}
 }
