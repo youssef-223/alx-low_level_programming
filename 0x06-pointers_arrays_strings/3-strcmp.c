@@ -6,7 +6,7 @@
  * @s1: param1
  * @s2: param2
  * Description: copy the string to  by pointer src to
- * Return: pointer to dest
+ *Return: pointer to dest
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -16,10 +16,16 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] != s2[i])
 		{
-			return (0);
+			return (1);
 		}
 
 	}
-	return (1);
+
+	if (s1[i] == '\0' && s2[i] == '\0')
+	{
+		return (0);
+	}
+
+	return (0);
 }
 
