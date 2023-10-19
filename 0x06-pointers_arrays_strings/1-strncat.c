@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * * _strncpy - Prints the elements of an array
+ * * _strncat - Prints the elements of an array
  * @dest: param1
  * @src: param2
  * @n: param3
  * Description: copy the string to  by pointer src to
  *Return: pointer to dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j;
 
