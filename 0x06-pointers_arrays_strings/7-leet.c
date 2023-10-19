@@ -3,11 +3,11 @@
 
 /**
  * *leet - reverse the elements of an array
- * @s: param1
+ * @c: param1
  * Description: reverse the elements of an array
  *Return: pointer to character
  */
-char *leet(char *s)
+char *leet(char *c)
 {
 	char *cp = c;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
