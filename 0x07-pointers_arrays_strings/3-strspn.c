@@ -13,18 +13,15 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int numOfBytes = 0;
 	int i, j;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; accept[j] >= '\0'; j++)
+		for (j = 0; accept[j] != s[i]; j++)
 		{
-			if (s[i] == accept[j])
-			{
-				numOfBytes++;
-			}
+			if (accept[j] == '\0')
+				return (i);
 		}
 	}
-	return (numOfBytes);
+	return (i);
 }
