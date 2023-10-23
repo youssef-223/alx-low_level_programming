@@ -26,10 +26,10 @@ char *_strstr(char *haystack, char *needle)
 			i++;
 		}
 
-		if (needle[j] == '\0')
-			return (&haystack[start]);
-		else
+		if (needle[j] != '\0')
 			j = 0;
+		else
+			return (&haystack[start]);
 	}
 
 	return (NULL);
