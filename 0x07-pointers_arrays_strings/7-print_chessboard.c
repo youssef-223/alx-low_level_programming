@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_chessboard - Short description, single line
  * @a: param1
