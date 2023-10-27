@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
  * main - Short description, single line
  * @argc: param1
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < 5; i++)
 	{
-		if (money <= cents[i])
+		if (money >= cents[i])
 		{
 			leastcents += money / cents[i];
 			money = money % cents[i];
