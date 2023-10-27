@@ -10,7 +10,7 @@
  *
  * Return: Return
  */
-int main(int argc, char const *argv)
+int main(int argc, char const *argv[])
 {
 	int sum = 0;
 	char *c;
