@@ -22,7 +22,7 @@ int _strlen(char *str)
 /**
  * str_concat - Short description, single line
  * @s1: param1
- * @s1: param2
+ * @s2: param2
  *
  * Description: Description
  *
