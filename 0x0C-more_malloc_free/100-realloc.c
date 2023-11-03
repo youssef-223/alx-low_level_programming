@@ -5,6 +5,7 @@
  * _realloc - Short description, single line
  * @old_size: param1
  * @new_size: param2
+ * @ptr: param3
  * Description: Description
  *
  * Return: Return
