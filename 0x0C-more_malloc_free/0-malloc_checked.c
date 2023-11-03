@@ -5,7 +5,6 @@
 /**
  * malloc_checked - Short description, single line
  * @b: param1
- *
  * Description: Description
  *
  * Return: Return
@@ -13,10 +12,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-    int *ptr = malloc(b);
+	int *m = malloc(b);
 
-    if (ptr == 0)
+	if (m == 0)
+	{
 		exit(98);
-
-        return (ptr);
+	}
+	return (m);
 }
