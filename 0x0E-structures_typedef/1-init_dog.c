@@ -2,9 +2,10 @@
 
 /**
  * init_dog - Short description, single line
- * @*d: param1
- * @*age: param2
- * @*owner: param2
+ * @d: param1
+ * @age: param2
+ * @name: param3
+ * @owner: param4
  * Description: Description
  *
  * Return: Return
