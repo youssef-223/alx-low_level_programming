@@ -1,4 +1,4 @@
-#include "function_poinnters.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - Short description, single line
