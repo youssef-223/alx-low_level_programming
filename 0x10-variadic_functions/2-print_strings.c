@@ -2,7 +2,7 @@
 
 
 /**
- * print_numbers - Short description, single line
+ * print_strings - Short description, single line
  * @separator: param1
  * @n: param2
  * @...: param3
@@ -12,9 +12,10 @@
  * Return: Return
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int i = n;
+	char *str;
 	va_list ap;
 
 	if (!n)
@@ -24,6 +25,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	va_start(ap, n);
 	while (i--)
-		printf("%d%s", va_arg(ap, int), i ? (separator ? separator : "") : "\n");
+		printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)",
+			i ? (separator ? separator : "") : "\n");
 	va_end(ap);
 }
