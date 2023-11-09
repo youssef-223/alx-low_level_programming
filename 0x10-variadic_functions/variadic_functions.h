@@ -4,6 +4,14 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+
+/**
+ * struct token - Add two numbers.
+ * @token: The first number.
+ * @f: The second number.
+ *
+ * Return: The sum of num1 and num2.
+ */
 typedef struct token
 {
 	char *token;
