@@ -64,7 +64,14 @@ void format_string(char *separator, va_list ap)
 
 	printf("%s%s", separator, str);
 }
-
+/**
+ * print_all - Short description, single line
+ * @format: param1
+ *
+ * Description: Description
+ *
+ * Return: Return
+ */
 void print_all(const char * const format, ...)
 {
 	int i = 0, j;
