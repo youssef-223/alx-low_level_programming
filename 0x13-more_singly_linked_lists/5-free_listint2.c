@@ -2,7 +2,7 @@
 
 
 /**
- * free_listint - print linked list
+ * free_listint2 - print linked list
  * @head: param1
  *
  * Return: Size of list
