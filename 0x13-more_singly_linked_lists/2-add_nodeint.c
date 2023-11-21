@@ -2,7 +2,7 @@
 
 
 /**
- * listint_len - print linked list
+ * add_nodeint - print linked list
  * @head: param1
  * @n: param1
  * Return: Size of list
