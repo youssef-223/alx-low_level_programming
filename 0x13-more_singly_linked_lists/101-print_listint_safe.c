@@ -42,7 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			if (head == list[i])
 			{
-				printf("->[%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free(list);
 				return (num);
 			}
@@ -55,4 +55,3 @@ size_t print_listint_safe(const listint_t *head)
 	free(list);
 	return (num);
 }
-
