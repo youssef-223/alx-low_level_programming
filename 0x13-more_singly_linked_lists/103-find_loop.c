@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * find_listint_loop - print linked list
  * @head: param1
