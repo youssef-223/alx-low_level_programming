@@ -1,6 +1,3 @@
-#include "lists.h"
-
-
 /**
  * find_listint_loop - print linked list
  * @head: param1
@@ -18,7 +15,7 @@ listint_t *find_listint_loop(listint_t *head)
 	{
 		if (end == end->next)
 			return (end);
-		for (ptr = head; pre != end; ptr = ptr->next)
+		for (ptr = head; ptr != end; ptr = ptr->next)
 			if (ptr == end->next)
 				return (end->next);
 	}
