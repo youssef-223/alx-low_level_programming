@@ -2,13 +2,12 @@
 
 
 /**
- * get_bit - print linked list
+ * print_binary - print linked list
  * @n: param1
- * @index: param2
  * Return: int number
 */
 
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
 	int bit + sizeof(n) * 8, printed = 0;
 
@@ -25,4 +24,3 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (!printed)
 		_putchar('0');
 }
-
